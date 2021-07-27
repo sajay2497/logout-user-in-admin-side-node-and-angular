@@ -1,0 +1,16 @@
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+                <div class="mb-3">
+                    <label class="form-label">Email address</label>
+                    <input type="email" #email class="form-control" placeholder="Email" value="ajay@gmail.com">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" #password class="form-control" placeholder="Password" value="123456">
+                </div>
+                <button type="submit" class="btn btn-primary" (click)="login(email.value, password.value)">Login</button>
+        </div>
+    </div>
+</div>
